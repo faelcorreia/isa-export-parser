@@ -1,3 +1,7 @@
 .bold {
     font-weight: bold;
 }
+
+.content {
+    margin: 20px;
+}

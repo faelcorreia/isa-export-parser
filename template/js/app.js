@@ -129,6 +129,8 @@ angular.module('isa-export-parser', ['ui.router'])
                 convertId(line, section.header.indexOf("URLSet"), 1)
                 convertId(line, section.header.indexOf("UserSets"), 1)
                 convertId(line, section.header.indexOf("ScheduleUsed"), 1)
+
+                line[section.header.indexOf("Action")] = line[section.header.indexOf("Action")] ? ["Block"] : ["Allow"]
             })
             $scope.section = section
         })

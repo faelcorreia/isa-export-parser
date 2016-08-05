@@ -39,6 +39,13 @@
                             "newLine": false,
                             "children": []
                         }, {
+                            "tag": "fpc4:Action",
+                            "label": "Action",
+                            "attrs": [],
+                            "needValue": true,
+                            "newLine": false,
+                            "children": []
+                        }, {
                             "tag": "fpc4:Name",
                             "label": "Name",
                             "attrs": [],
