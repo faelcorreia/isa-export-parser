@@ -1,8 +1,0 @@
-{
-  "name": "bytes-histogram",
-  "version": "1.0.0",
-  "description": "Generate a table with the quantity of each byte of a given file.",
-  "main": "index.js",
-  "author": "Rafael Correia <rafaelnominato at gmail dot com>",
-  "license": "ISC"
-}
