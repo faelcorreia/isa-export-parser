@@ -3,7 +3,7 @@ var _ = require('lodash');
 
 var parseXML = function(xml, scheme, callback) {
     parseString(xml, function(err, element) {
-        var model = require('../scheme/' + scheme)
+        var model = require(scheme)
         var header = []
         var lists = []
         var parsed = {}
@@ -73,7 +73,7 @@ var parseXMLRecursive = function(element, model, lists, list, header, varMap) {
                 //Parse variable label
                 var label = model.label
                 if (/\{\{.*\}\}/.test(label)) {
-                    label = varMap[label.substring(2, label.length - 2)]                    
+                    label = varMap[label.substring(2, label.length - 2)]
                 }
                 if (header.indexOf(label) <= -1) {
                     header.push(label)
